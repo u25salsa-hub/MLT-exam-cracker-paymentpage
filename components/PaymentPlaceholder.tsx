@@ -5,21 +5,23 @@ export const PaymentPlaceholder: React.FC = () => {
 
   useEffect(() => {
     const currentForm = formRef.current;
-    if (currentForm) {
-      // Clear previous content to prevent duplicates
-      currentForm.innerHTML = '';
-      
-      const script = document.createElement('script');
-      script.src = "https://checkout.razorpay.com/v1/payment-button.js";
-      script.dataset.payment_button_id = "pl_S8UpQbbaQZg9rU";
-      script.async = true;
-      
-      currentForm.appendChild(script);
-    }
+    if (!currentForm) return;
+
+    // Prevent duplicates: if script already exists, do not append again
+    if (currentForm.querySelector('script')) return;
+
+    const script = document.createElement('script');
+    script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+    script.async = true;
+    
+    // CRITICAL: Use setAttribute to ensure the underscore in the attribute name is preserved exactly
+    script.setAttribute('data-payment_button_id', 'pl_S8UpQbbaQZg9rU');
+    
+    currentForm.appendChild(script);
   }, []);
 
   return (
-    <div className="w-full flex justify-center py-2">
+    <div className="w-full flex justify-center py-4">
       <form ref={formRef} className="flex justify-center"></form>
     </div>
   );
