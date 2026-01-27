@@ -15,7 +15,7 @@ export const PaymentPlaceholder: React.FC = () => {
     script.async = true;
     
     // CRITICAL: Use setAttribute to ensure the underscore in the attribute name is preserved exactly
-    script.setAttribute('data-payment_button_id', 'pl_S8qtv4Kg6szF0y');
+    script.setAttribute('data-payment_button_id', 'pl_S8UpQbbaQZg9rU');
     
     currentForm.appendChild(script);
   }, []);
