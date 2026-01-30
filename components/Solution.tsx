@@ -48,11 +48,11 @@ export const Solution: React.FC = () => {
             }
           />
           <FeatureCard 
-            title="Simplified Explanations"
-            description="Understand the 'why' behind every answer with detailed rationales to solidify your concepts."
+            title="CBT Style Mock Tests"
+            description="Experience real Computer Based Test (CBT) style interactive mock tests to build speed and accuracy before the actual exam."
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.45l.75-.262a3 3 0 00-1.125-5.698A6.013 6.013 0 0012 4.5c-1.17 0-2.288.303-3.262.84l-.75.262a3 3 0 00-1.125 5.698A6.01 6.01 0 0010.5 12.75 6.01 6.01 0 0012 12.75zm0 0a6.01 6.01 0 001.5.45l.75.262a3 3 0 00.75 1.698m-3 0a3 3 0 00.75-1.698" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
               </svg>
             }
           />

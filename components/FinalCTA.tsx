@@ -12,15 +12,16 @@ export const FinalCTA: React.FC = () => {
         
         <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl inline-block w-full max-w-md border border-white/20">
           <div className="flex justify-between items-end mb-6 border-b border-white/20 pb-4">
-            <span className="text-teal-200 text-sm">E-book Price</span>
+            <span className="text-teal-200 text-sm font-medium">Limited Time Offer</span>
             <div className="text-right">
-              <span className="block text-sm text-red-300 line-through decoration-red-300">₹999</span>
-              <span className="text-3xl font-bold text-white">₹249</span>
+              <span className="text-lg text-red-300 line-through decoration-red-300 opacity-80 mr-2">₹999</span>
+              <span className="text-4xl font-extrabold text-white">₹249</span>
             </div>
           </div>
           <div className="mb-2">
             <PaymentPlaceholder />
           </div>
+          <p className="text-xs text-teal-200 mt-4">Secure payment via Razorpay</p>
         </div>
       </div>
     </section>
