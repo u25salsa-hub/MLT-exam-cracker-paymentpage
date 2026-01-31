@@ -26,7 +26,7 @@ export const PulseTech: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-bold text-white">Micro-Competency Tracking</h3>
-                  <p className="text-slate-400 text-sm mt-1">We tag every MCQ with 15+ metadata points (e.g., Clinical Pathology > Hematology > Anemia > Iron Deficiency) to pinpoint exactly where your knowledge breaks.</p>
+                  <p className="text-slate-400 text-sm mt-1">We tag every MCQ with 15+ metadata points (e.g., Clinical Pathology &gt; Hematology &gt; Anemia &gt; Iron Deficiency) to pinpoint exactly where your knowledge breaks.</p>
                 </div>
               </div>
               <div className="flex items-start">
