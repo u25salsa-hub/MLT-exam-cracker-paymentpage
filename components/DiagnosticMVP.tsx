@@ -1,6 +1,10 @@
 import React from 'react';
 
-export const DiagnosticMVP: React.FC = () => {
+interface DiagnosticMVPProps {
+  onNavigate: (page: string) => void;
+}
+
+export const DiagnosticMVP: React.FC<DiagnosticMVPProps> = ({ onNavigate }) => {
   return (
     <section id="diagnostic-section" className="py-24 bg-teal-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,10 +37,7 @@ export const DiagnosticMVP: React.FC = () => {
             </ul>
 
             <button 
-              onClick={() => {
-                const el = document.getElementById('payment-section');
-                el?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={() => onNavigate('diagnostic')}
               className="w-full sm:w-auto px-8 py-4 bg-teal-600 text-white font-bold rounded-xl hover:bg-teal-700 transition-all shadow-lg shadow-teal-600/20 text-center"
             >
               Unlock My Audit Now

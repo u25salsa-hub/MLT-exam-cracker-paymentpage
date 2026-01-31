@@ -11,6 +11,7 @@ import { Footer } from './components/Footer';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { Terms } from './components/Terms';
 import { About } from './components/About';
+import { DiagnosticTest } from './components/DiagnosticTest';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState('home');
@@ -28,17 +29,16 @@ const App: React.FC = () => {
         return <Terms />;
       case 'about':
         return <About />;
+      case 'diagnostic':
+        return <DiagnosticTest onNavigate={setCurrentPage} />;
       case 'home':
       default:
         return (
           <>
-            <Hero onNavigate={() => {
-               const el = document.getElementById('diagnostic-section');
-               el?.scrollIntoView({ behavior: 'smooth' });
-            }} />
+            <Hero onNavigate={(page: string) => setCurrentPage(page)} />
             <Problem />
             <PulseTech />
-            <DiagnosticMVP />
+            <DiagnosticMVP onNavigate={setCurrentPage} />
             <Roadmap />
             <Proof />
             <FinalCTA />

@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface HeroProps {
-  onNavigate: () => void;
+  onNavigate: (page: string) => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
@@ -28,7 +28,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <button 
-              onClick={onNavigate}
+              onClick={() => onNavigate('diagnostic')}
               className="w-full sm:w-auto px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-slate-800 transition-all shadow-lg hover:shadow-slate-900/20 transform hover:-translate-y-1 flex items-center justify-center gap-2"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -37,28 +37,11 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               Start Free AI Diagnostic
             </button>
             <button 
-              onClick={() => {
-                const el = document.getElementById('payment-section');
-                el?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={() => window.location.href = "mailto:sanjay@mltmission.in?subject=Wanting to join waitlist"}
               className="w-full sm:w-auto px-8 py-4 bg-white text-slate-700 font-bold rounded-xl border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all flex items-center justify-center"
             >
               Join the Waitlist
             </button>
-          </div>
-
-          {/* Tech Badges */}
-          <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-            <span className="text-sm font-semibold text-slate-400 uppercase tracking-widest">Built On</span>
-            <div className="flex items-center gap-2">
-               <span className="font-bold text-slate-600">Google Cloud</span>
-            </div>
-            <div className="flex items-center gap-2">
-               <span className="font-bold text-slate-600">Vertex AI</span>
-            </div>
-            <div className="flex items-center gap-2">
-               <span className="font-bold text-slate-600">React</span>
-            </div>
           </div>
         </div>
       </div>
