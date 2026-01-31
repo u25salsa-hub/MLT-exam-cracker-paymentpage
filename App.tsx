@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Problem } from './components/Problem';
-import { Solution } from './components/Solution';
-import { Bonus } from './components/Bonus';
+import { PulseTech } from './components/PulseTech';
+import { DiagnosticMVP } from './components/DiagnosticMVP';
+import { Roadmap } from './components/Roadmap';
 import { Proof } from './components/Proof';
 import { FinalCTA } from './components/FinalCTA';
-import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { Terms } from './components/Terms';
@@ -32,20 +32,23 @@ const App: React.FC = () => {
       default:
         return (
           <>
-            <Hero />
+            <Hero onNavigate={() => {
+               const el = document.getElementById('diagnostic-section');
+               el?.scrollIntoView({ behavior: 'smooth' });
+            }} />
             <Problem />
-            <Solution />
-            <Bonus />
+            <PulseTech />
+            <DiagnosticMVP />
+            <Roadmap />
             <Proof />
             <FinalCTA />
-            <Contact />
           </>
         );
     }
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50">
+    <div className="min-h-screen flex flex-col bg-slate-50 font-sans">
       <Header onNavigate={setCurrentPage} />
       <main className="flex-grow">
         {renderContent()}
