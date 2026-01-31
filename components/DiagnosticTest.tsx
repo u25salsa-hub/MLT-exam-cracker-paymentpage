@@ -40,10 +40,114 @@ const QUESTIONS = [
     options: ["MacConkey Agar", "Lowenstein-Jensen Medium", "Blood Agar", "Chocolate Agar"],
     correct: 1,
     subject: "Microbiology"
+  },
+  {
+    id: 6,
+    question: "The standard temperature and pressure for autoclaving is:",
+    options: ["100°C at 10 psi for 30 min", "121°C at 15 psi for 15 min", "115°C at 10 psi for 20 min", "160°C at 0 psi for 60 min"],
+    correct: 1,
+    subject: "Microbiology"
+  },
+  {
+    id: 7,
+    question: "HbA1c is used to monitor the long-term control of:",
+    options: ["Hypertension", "Diabetes Mellitus", "Thyroid disorders", "Liver function"],
+    correct: 1,
+    subject: "Biochemistry"
+  },
+  {
+    id: 8,
+    question: "Which stain is used to demonstrate Reticulocytes?",
+    options: ["Leishman Stain", "Giemsa Stain", "New Methylene Blue (Supravital)", "H&E Stain"],
+    correct: 2,
+    subject: "Hematology"
+  },
+  {
+    id: 9,
+    question: "The recommended fixative for a Pap smear is:",
+    options: ["10% Formalin", "95% Ethyl Alcohol", "Acetone", "Methanol"],
+    correct: 1,
+    subject: "Cytopathology"
+  },
+  {
+    id: 10,
+    question: "The normal renal threshold for glucose is approximately:",
+    options: ["100 mg/dL", "140 mg/dL", "180 mg/dL", "220 mg/dL"],
+    correct: 2,
+    subject: "Biochemistry"
+  },
+  {
+    id: 11,
+    question: "Which immunoglobulin can cross the placenta?",
+    options: ["IgA", "IgM", "IgG", "IgE"],
+    correct: 2,
+    subject: "Immunology"
+  },
+  {
+    id: 12,
+    question: "In the Gram stain procedure, the primary stain used is:",
+    options: ["Safranin", "Crystal Violet", "Carbol Fuchsin", "Methylene Blue"],
+    correct: 1,
+    subject: "Microbiology"
+  },
+  {
+    id: 13,
+    question: "Which anticoagulant is used for the Westergren method of ESR estimation?",
+    options: ["EDTA", "Double Oxalate", "3.8% Trisodium Citrate", "Sodium Fluoride"],
+    correct: 2,
+    subject: "Hematology"
+  },
+  {
+    id: 14,
+    question: "Jaffe's reaction is used for the estimation of:",
+    options: ["Urea", "Creatinine", "Uric Acid", "Protein"],
+    correct: 1,
+    subject: "Biochemistry"
+  },
+  {
+    id: 15,
+    question: "The vector for Malaria is:",
+    options: ["Male Anopheles Mosquito", "Female Anopheles Mosquito", "Culex Mosquito", "Aedes Mosquito"],
+    correct: 1,
+    subject: "Parasitology"
+  },
+  {
+    id: 16,
+    question: "In H&E staining, the nuclei are stained blue/purple by:",
+    options: ["Eosin", "Hematoxylin", "Orange G", "Aniline Blue"],
+    correct: 1,
+    subject: "Histopathology"
+  },
+  {
+    id: 17,
+    question: "Bacteria primarily reproduce by:",
+    options: ["Mitosis", "Budding", "Binary Fission", "Sporulation"],
+    correct: 2,
+    subject: "Microbiology"
+  },
+  {
+    id: 18,
+    question: "Elevation of SGPT (ALT) is most specific for:",
+    options: ["Heart disease", "Liver disease", "Kidney disease", "Bone disease"],
+    correct: 1,
+    subject: "Biochemistry"
+  },
+  {
+    id: 19,
+    question: "The normal life span of platelets is approximately:",
+    options: ["120 days", "1-2 days", "9-12 days", "30 days"],
+    correct: 2,
+    subject: "Hematology"
+  },
+  {
+    id: 20,
+    question: "Widal test is used for the diagnosis of:",
+    options: ["Malaria", "Typhoid Fever", "Syphilis", "Tuberculosis"],
+    correct: 1,
+    subject: "Serology"
   }
 ];
 
-// Simplified for MVP demo (usually 20, showing 5 for flow demonstration in code, but UI says 20)
 const DEMO_QUESTIONS = QUESTIONS;
 
 export const DiagnosticTest: React.FC<DiagnosticTestProps> = ({ onNavigate }) => {
