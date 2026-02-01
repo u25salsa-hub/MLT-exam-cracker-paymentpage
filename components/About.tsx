@@ -23,7 +23,7 @@ export const About: React.FC = () => {
           </div>
 
           <h2 className="text-2xl font-bold text-slate-900 mt-10 mb-6">What We Offer</h2>
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
               <h3 className="font-bold text-teal-700 mb-2">Interactive Mock Test Engine</h3>
               <p className="text-sm text-slate-600">A React-powered testing interface that mimics the real exam environment.</p>
@@ -31,10 +31,6 @@ export const About: React.FC = () => {
             <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
               <h3 className="font-bold text-teal-700 mb-2">Expertly Curated E-books</h3>
               <p className="text-sm text-slate-600">Comprehensive study material covering Microbiology, Hematology, and Clinical Pathology.</p>
-            </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
-              <h3 className="font-bold text-teal-700 mb-2">Digital-First Learning</h3>
-              <p className="text-sm text-slate-600">Built on Google Cloud to ensure 100% uptime and a seamless experience for learners across the country.</p>
             </div>
           </div>
         </div>
